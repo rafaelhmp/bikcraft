@@ -25,7 +25,7 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject("Formulário Bikcraft");
 $email->addContent("text/plain", $body_content);
 
-$sendgrid = new \SendGrid("COLOQUE A API AQUI");
+$sendgrid = new \SendGrid("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");
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
