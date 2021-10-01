@@ -14,32 +14,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style-raw.css">
+  <link rel="stylesheet" href="css/responsivo.css"> -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsivo.css">
-  <link rel="stylesheet" href="css/contato.css">
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
-  <!-- Inicio Header -->
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="grid-4">
-        <img src="img/bikcraft.svg" alt="Bikcraft">
-      </a>
-      <nav class="grid-12 header_menu">
-        <ul>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="contato.html" class="menu_ativo">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- Inicio Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo-bikcraft grid-4">
+      <img src="img/bikcraft.svg" alt="Bikcraft">
+    </a>
+    <nav class="grid-12 header_menu">
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <!-- Fim Header -->
   <!-- Inicio Introducao -->
   <section class="introducao-interna interna-contato">
@@ -50,94 +50,94 @@
   </section>
   <!-- Fim Introducao -->
   <!-- Inicio Orcamento -->
-  <section data-anime="1600" class="contato container fadeInLeft">
-    <form id ="form_orcamento" class="contato_form grid-8 formphp" method="POST" action="./enviar-sendgrid.php">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
-      <label for="telefone">Telefone</label>
-      <input type="text" id="telefone" name="telefone">
+<section data-anime="1600" class="contato container fadeInLeft">
+  <form id ="form_orcamento" class="contato_form grid-8 formphp" method="POST" action="./enviar-sendgrid.php">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+    <label for="telefone">Telefone</label>
+    <input type="text" id="telefone" name="telefone">
 
-      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-      <input type="text" class="nao-aparece" name="leaveblank">
-      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-      <input type="text" class="nao-aparece" name="dontchange" value="http://">
+    <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+    <input type="text" class="nao-aparece" name="leaveblank">
+    <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+    <input type="text" class="nao-aparece" name="dontchange" value="http://">
 
-      <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
-      <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
-    </form>
-    <div class="contato_dados grid-8">
-      <h3>Dados</h3>
-      <span>+55 81 9.9999-9999</span>
-      <span class="dados_email">orcamento@bikcraft.com</span>
-      <span>Rua Ali Perto, 1111</span>
-      <span>Recife - PE - Brasil</span>
-      <h3>Redes sociais</h3>
-      <ul>
-        <li data-anime="1600" class="fadeInUp"><a href="https://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
-        <li data-anime="1800" class="fadeInUp"><a href="https://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
-        <li data-anime="2000" class="fadeInUp"><a href="https://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
-      </ul>
-    </div>
-  </section>
-  <!-- Fim Orcamento -->
-  <!-- Inicio Mapa -->
-  <section data-anime="2200" class="container contato_mapa fadeInUp">
-    <a class="grid-16" href="http://google.com" target="_blank"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
-  </section>
-  <!-- Fim Mapa -->
-  <!-- Inicio Quebra -->
-  <section class="quebra">
-    <blockquote class="quote-externo container">
-      <p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos
-        os detalhes da vida cotidiana"</p>
-      <cite>WILLIAM MORRIS</cite>
-    </blockquote>
-  </section>
-  <!-- Fim Quebra -->
-  <!-- Inicio Footer -->
-  <footer>
-    <div class="footer">
-      <div class="container">
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+    <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
+  </form>
+  <div class="contato_dados grid-8">
+    <h3>Dados</h3>
+    <span>+55 81 9.9999-9999</span>
+    <span class="dados_email">orcamento@bikcraft.com</span>
+    <span>Rua Ali Perto, 1111</span>
+    <span>Recife - PE - Brasil</span>
+    <h3>Redes sociais</h3>
+    <ul>
+      <li data-anime="1600" class="fadeInUp"><a href="https://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
+      <li data-anime="1800" class="fadeInUp"><a href="https://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
+      <li data-anime="2000" class="fadeInUp"><a href="https://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
+    </ul>
+  </div>
+</section>
+<!-- Fim Orcamento -->
+<!-- Inicio Mapa -->
+<section data-anime="2200" class="container contato_mapa fadeInUp">
+  <a class="grid-16" href="http://google.com" target="_blank"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+</section>
+<!-- Fim Mapa -->
+<!-- Inicio Quebra -->
+<section class="quebra">
+  <blockquote class="quote-externo container">
+    <p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos
+      os detalhes da vida cotidiana"</p>
+    <cite>WILLIAM MORRIS</cite>
+  </blockquote>
+</section>
+<!-- Fim Quebra -->
+<!-- Inicio Footer -->
+<footer>
+  <div class="footer">
+    <div class="container">
 
-        <div class="grid-8 footer_historia">
-          <h3>Nossa História</h3>
-          <p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
-        </div>
-
-        <div class="grid-4 footer_contato">
-          <h3>Contato</h3>
-          <ul>
-            <li>- 81 9999-9999</li>
-            <li>- contato@bikcraft.com</li>
-            <li>- Recife - PE</li>
-          </ul>
-        </div>
-
-        <div class="grid-4 footer_redes">
-          <h3>Contato</h3>
-          <ul>
-            <li><a href="https://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
-            <li><a href="https://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
-            <li><a href="https://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
-          </ul>
-        </div>
-        </div>
+      <div class="grid-8 footer_historia">
+        <h3>Nossa História</h3>
+        <p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
       </div>
-      <div class="copy">
-        <div class="container">
-          <p class="grid-16">Bikcraft 2015 - Alguns direitos reservados.</p>
-        </div>
+
+      <div class="grid-4 footer_contato">
+        <h3>Contato</h3>
+        <ul>
+          <li>- 81 9999-9999</li>
+          <li>- contato@bikcraft.com</li>
+          <li>- Recife - PE</li>
+        </ul>
+      </div>
+
+      <div class="grid-4 footer_redes">
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="https://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
+          <li><a href="https://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
+          <li><a href="https://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+      </div>
     </div>
-  </footer>
-  <!-- Fim Footer -->
-  <!-- Inicio JavaScript -->
-  <script src="./js/simple-form.js"></script>
-  <script src="./js/simple-anime.js"></script>
-  <script src="./js/script.js"></script>
-  <!-- Fim JavaScript -->
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2015 - Alguns direitos reservados.</p>
+      </div>
+  </div>
+</footer>
+<!-- Fim Footer -->
+<!-- Inicio JavaScript -->
+<script src="./js/simple-form.js"></script>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
+<!-- Fim JavaScript -->
 
 </body>
 </html>

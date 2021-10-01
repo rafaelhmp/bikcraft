@@ -1,5 +1,11 @@
 /* Estilo para Tablet */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
+  /* Produtos Home */
+  .produtos_lista li:nth-child(1),
+  .produtos_lista li:nth-child(2) {
+    padding-bottom: 20px;
+  }
+
   /* Qualidade Home */
   .qualidade:after {
     right: 66px;
@@ -18,6 +24,7 @@
   /* Produtos */
   .produto_item h2 {
     top: -150px;
+    margin-bottom: -56px;
   }
   .produto_icone {
     padding: 41px 0;
@@ -30,6 +37,7 @@
   }
   .produto_info ul li {
     width: 181px;
+    height: 49px;
   }
 }
 /* Final do estilo para Tablet */
