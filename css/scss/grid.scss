@@ -57,7 +57,7 @@ $colunas: 16;
 }
 
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+@include d(t) {
   $container: 768;
   
   @for $i from 1 through $colunas {
@@ -76,7 +76,7 @@ $colunas: 16;
   }
 }
 
-@media only screen and (max-width: 787px) {
+@include d(m) {
   $container: 300;
 
   %mobile {

@@ -622,9 +622,22 @@ img {
   z-index: 10;
 }
 
+@media only screen and (max-width: 787px) {
+  .header {
+    position: relative;
+    padding-bottom: 0px;
+  }
+}
+
 .header_menu {
   text-align: right;
   margin-top: 8px;
+}
+
+@media only screen and (max-width: 787px) {
+  .header_menu {
+    text-align: center;
+  }
 }
 
 .header_menu ul li {
@@ -633,23 +646,57 @@ img {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 787px) {
+  .header_menu ul li {
+    margin: 5px;
+  }
+}
+
 .header_menu ul li a {
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 14px;
-  line-height: 20px;
   padding: 10px 0;
   transition: all 0.3s ease;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 787px) {
+  .header_menu ul li a {
+    color: #000;
+    border: 4px solid #000;
+    width: 136px;
+    display: block;
+    float: left;
+  }
 }
 
 .header_menu ul li a:hover {
   color: #fff;
 }
 
+@media only screen and (max-width: 787px) {
+  .header_menu ul li a:hover {
+    border-color: #fff;
+  }
+}
+
 .header_menu ul li a.menu_ativo {
   color: #fff;
+}
+
+@media only screen and (max-width: 787px) {
+  .header_menu ul li a.menu_ativo {
+    border-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .header img {
+    margin: 0 auto 10px auto;
+  }
 }
 
 /* Introducao */
@@ -663,11 +710,26 @@ img {
   padding-top: 80px;
 }
 
+@media only screen and (max-width: 787px) {
+  .introducao {
+    margin-top: 0px;
+    padding-top: 40px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
 .introducao h1 {
-  font-size: 48px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 787px) {
+  .introducao h1 {
+    font-size: 36px;
+  }
 }
 
 .quote-externo {
@@ -707,6 +769,12 @@ img {
   text-align: center;
   color: #fff;
   padding-top: 30px;
+}
+
+@media only screen and (max-width: 787px) {
+  .introducao-interna {
+    margin-top: 0px;
+  }
 }
 
 .introducao-interna h1 {
@@ -761,6 +829,13 @@ img {
   padding: 10px 20px 20px 20px;
 }
 
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .produtos_lista li:nth-child(1),
+  .produtos_lista li:nth-child(2) {
+    padding-bottom: 20px;
+  }
+}
+
 .produtos_icone {
   background: #000;
   padding: 20px;
@@ -770,6 +845,12 @@ img {
   padding-top: 40px;
   text-align: center;
   clear: both;
+}
+
+@media only screen and (max-width: 787px) {
+  .call {
+    padding-top: 10px;
+  }
 }
 
 .call p {
@@ -816,6 +897,18 @@ img {
   z-index: -1;
 }
 
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .qualidade:after {
+    right: 66px;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .qualidade:after {
+    display: none;
+  }
+}
+
 .qualidade img {
   margin: 0 auto;
 }
@@ -829,6 +922,12 @@ img {
 .qualidade_lista li {
   text-align: center;
   padding: 0 40px;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
 }
 
 .qualidade_lista li h3 {
@@ -911,8 +1010,21 @@ img {
   transition: all 0.3s ease;
 }
 
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .footer_redes ul li a {
+    padding: 6px;
+  }
+}
+
 .footer_redes ul li a:hover {
   border-color: #fff;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .footer_redes ul li a img {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .copy {
@@ -1019,10 +1131,25 @@ img {
   padding-right: 40px;
 }
 
+@media only screen and (max-width: 787px) {
+  .missao_sobre p {
+    padding-right: 0px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 .missao_sobre ul li {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 25px;
+}
+
+@media only screen and (max-width: 787px) {
+  .missao_sobre ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .foto-equipe {
@@ -1039,7 +1166,6 @@ img {
 }
 
 .produto_item h2 {
-  font-size: 36px;
   text-transform: uppercase;
   color: #fff;
   font-weight: bold;
@@ -1048,6 +1174,21 @@ img {
   top: -180px;
   text-align: center;
   margin-bottom: -56px;
+  font-size: 36px;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .produto_item h2 {
+    top: -150px;
+    margin-bottom: -56px;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .produto_item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+  }
 }
 
 .produto_item h2:after,
@@ -1063,6 +1204,18 @@ img {
 .produto_icone {
   background: #000;
   padding: 70px 0;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .produto_icone {
+    padding: 41px 0;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .produto_icone {
+    padding: 41px 0;
+  }
 }
 
 .produto_icone img {
@@ -1081,6 +1234,24 @@ img {
   height: 180px;
 }
 
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: 122px;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: auto;
+  }
+}
+
 .produto_info ul li {
   background: #fec63e;
   text-transform: uppercase;
@@ -1094,6 +1265,22 @@ img {
   padding-top: 16px;
 }
 
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .produto_info ul li {
+    width: 181px;
+    height: 49px;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .produto_info ul li {
+    width: 149px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 14px;
+  }
+}
+
 .produto_info ul li:nth-child(1),
 .produto_info ul li:nth-child(2) {
   margin-bottom: 2px;
@@ -1101,6 +1288,12 @@ img {
 
 .produto_info ul li:nth-child(even) {
   margin-left: 2px;
+}
+
+@media only screen and (max-width: 787px) {
+  .form {
+    padding-right: 0px;
+  }
 }
 
 /* Orcamento */
@@ -1193,6 +1386,12 @@ img {
   padding-right: 60px;
 }
 
+@media only screen and (max-width: 787px) {
+  .orcamento_dados ul {
+    padding-right: 0px;
+  }
+}
+
 .orcamento_dados ul li {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14px;
@@ -1249,6 +1448,13 @@ img {
 
 .contato_form {
   padding-right: 60px;
+}
+
+@media only screen and (max-width: 787px) {
+  .contato_form {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
 }
 
 .contato_form label {
@@ -1333,141 +1539,3 @@ img {
 .contato_mapa {
   margin-bottom: 60px;
 }
-
-/* Estilo para Tablet */
-@media only screen and (min-width: 788px) and (max-width: 979px) {
-  /* Produtos Home */
-  .produtos_lista li:nth-child(1),
-  .produtos_lista li:nth-child(2) {
-    padding-bottom: 20px;
-  }
-  /* Qualidade Home */
-  .qualidade:after {
-    right: 66px;
-  }
-  .qualidade_lista li {
-    padding: 0 10px;
-  }
-  /* Footer */
-  .footer_redes ul li a {
-    padding: 6px;
-  }
-  .footer_redes ul li a img {
-    width: 26px;
-    height: 26px;
-  }
-  /* Produtos */
-  .produto_item h2 {
-    top: -150px;
-    margin-bottom: -56px;
-  }
-  .produto_icone {
-    padding: 41px 0;
-  }
-  .produto_info p {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 20px 30px;
-    height: 122px;
-  }
-  .produto_info ul li {
-    width: 181px;
-    height: 49px;
-  }
-}
-
-/* Final do estilo para Tablet */
-/* Estilo para Mobile */
-@media only screen and (max-width: 787px) {
-  /* Header */
-  .header {
-    position: relative;
-    padding-bottom: 0px;
-  }
-  .header img {
-    margin: 0 auto 10px auto;
-  }
-  .header_menu {
-    text-align: center;
-  }
-  .header_menu ul li {
-    margin: 5px;
-  }
-  .header_menu ul li a {
-    color: #000;
-    border: 4px solid #000;
-    width: 136px;
-    display: block;
-    float: left;
-  }
-  .header_menu ul li a:hover {
-    border-color: #fff;
-  }
-  .header_menu ul li a.menu_ativo {
-    border-color: #fff;
-  }
-  /* Introducao */
-  .introducao {
-    margin-top: 0px;
-    padding-top: 40px;
-    background: url("../img/bg-mobile.jpg") no-repeat center;
-    background-size: cover;
-  }
-  .introducao-interna {
-    margin-top: 0px;
-  }
-  .introducao h1 {
-    font-size: 36px;
-  }
-  /* Call */
-  .call {
-    padding-top: 10px;
-  }
-  /* Qualidade Home */
-  .qualidade:after {
-    display: none;
-  }
-  /* Sobre */
-  .missao_sobre p {
-    padding-right: 0px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .missao_sobre ul li {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  /* Produtos */
-  .produto_item h2 {
-    top: -100px;
-    margin-bottom: -68px;
-  }
-  .produto_icone {
-    padding: 41px 0;
-  }
-  .produto_info p {
-    font-size: 14px;
-    line-height: 20px;
-    padding: 20px 30px;
-    height: auto;
-  }
-  .produto_info ul li {
-    width: 149px;
-    font-size: 14px;
-    line-height: 20px;
-    padding-top: 14px;
-  }
-  .form {
-    padding-right: 0px;
-  }
-  .orcamento_dados ul {
-    padding-right: 0px;
-  }
-  /* Contato */
-  .contato_form {
-    padding-right: 0px;
-    margin-bottom: 40px;
-  }
-}
-
-/* Final do estilo para Mobile */

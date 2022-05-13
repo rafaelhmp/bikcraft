@@ -84,17 +84,27 @@ img {
   position: fixed;
   top: 0;
   z-index: 10;
+  @include d(m) {
+    position: relative;
+    padding-bottom: 0px;
+  }
 }
 
 .header_menu {
   text-align: right;
   margin-top: 8px;
+  @include d(m) {
+    text-align: center;
+  }
 }
 
 .header_menu ul li {
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
+  @include d(m) {
+    margin: 5px;
+  }
 }
 
 .header_menu ul li a {
@@ -102,17 +112,36 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  @include tipo-1(14);
   padding: 10px 0;
   transition: all 0.3s ease;
+  @include tipo-1(14);
+  @include d(m) {
+    color: $cor-secundaria;
+    border: 4px solid $cor-secundaria;
+    width: 136px;
+    display: block;
+    float: left;
+  }
 }
 
 .header_menu ul li a:hover {
   color: $white;
+  @include d(m) {
+    border-color: $white;
+  }
 }
 
 .header_menu ul li a.menu_ativo {
   color: $white;
+  @include d(m) {
+    border-color: $white;
+  }
+}
+
+.header img {
+  @include d(m) {
+    margin: 0 auto 10px auto;
+  }
 }
 
 /* Introducao */
@@ -125,13 +154,22 @@ img {
   background-size: cover;
   text-align: center;
   padding-top: 80px;
+  @include d(m) {
+    margin-top: 0px;
+    padding-top: 40px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .introducao h1 {
-  @include tipo-1(48);
   color: $white;
   font-weight: bold;
   text-transform: uppercase;
+  @include tipo-1(48);
+  @include d(m) {
+    @include tipo-1(36);
+  }
 }
 
 .quote-externo {
@@ -171,6 +209,9 @@ img {
   text-align: center;
   color: $white;
   padding-top: 30px;
+  @include d(m) {
+    margin-top: 0px;
+  }
 }
 
 .introducao-interna h1 {
@@ -225,6 +266,13 @@ img {
   padding: 10px 20px 20px 20px;
 }
 
+.produtos_lista li:nth-child(1),
+  .produtos_lista li:nth-child(2) {
+    @include d(t) {
+      padding-bottom: 20px;
+    }
+  }
+
 .produtos_icone {
   background: $cor-secundaria;
   padding: 20px;
@@ -234,6 +282,9 @@ img {
   padding-top: 40px;
   text-align: center;
   clear: both;
+  @include d(m) {
+    padding-top: 10px;
+  }
 }
 
 .call p {
@@ -280,6 +331,12 @@ img {
   top: 209px;
   right: 162px;
   z-index: -1;
+  @include d(t) {
+    right: 66px;
+  }
+  @include d(m) {
+    display: none;
+  }
 }
 
 .qualidade img {
@@ -294,6 +351,9 @@ img {
 .qualidade_lista li {
   text-align: center;
   padding: 0 40px;
+  @include d(t) {
+    padding: 0 10px;
+  }
 }
 
 .qualidade_lista li h3 {
@@ -372,10 +432,20 @@ img {
   display: block;
   padding: 10px;
   transition: all 0.3s ease;
+  @include d(t) {
+    padding: 6px;
+  }
 }
 
 .footer_redes ul li a:hover {
   border-color: $white;
+}
+
+.footer_redes ul li a img {
+  @include d(t) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .copy {
