@@ -20,7 +20,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: $cor-secundaria;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
@@ -31,7 +31,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 8px auto;
 }
 
@@ -40,7 +40,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: $cor-secundaria;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 8px 0;
 }
 
@@ -76,8 +76,8 @@ img {
 }
 
 .btn.btn-preto:hover {
-  border-color: #000;
-  color: #000;
+  border-color: $cor-secundaria;
+  color: $cor-secundaria;
 }
 
 /* Header */
@@ -103,7 +103,7 @@ img {
 }
 
 .header_menu ul li a {
-  color: #000;
+  color: $cor-secundaria;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -224,7 +224,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 2px auto;
 }
 
@@ -233,7 +233,7 @@ img {
 }
 
 .produtos_icone {
-  background: #000;
+  background: $cor-secundaria;
   padding: 20px;
 }
 
@@ -251,7 +251,7 @@ img {
 
 .portfolio {
   width: 100%;
-  background: #000;
+  background: $cor-secundaria;
   padding: 40px 0;
 }
 
@@ -317,7 +317,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #000;
+  background: $cor-secundaria;
   margin: 6px auto;
 }
 
@@ -340,7 +340,7 @@ img {
 
 .footer {
   width: 100%;
-  background: #000;
+  background: $cor-secundaria;
   color: #fff;
   padding: 20px;
 }

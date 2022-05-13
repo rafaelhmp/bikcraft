@@ -30,7 +30,7 @@
 }
 
 .produto_icone {
-  background: #000;
+  background: $cor-secundaria;
   padding: 70px 0;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .produto_info {
-  background: #000;
+  background: $cor-secundaria;
 }
 
 .produto_info p {
@@ -75,7 +75,7 @@
 /* Orcamento */
 
 .orcamento {
-  background: #000;
+  background: $cor-secundaria;
   width: 100%;
   margin-top: 60px;
   padding: 40px 0;
