@@ -55,9 +55,9 @@ img {
 }
 
 .btn {
-  border: 3px solid #fec63e;
+  border: 3px solid $cor-primaria;
   padding: 10px 30px;
-  color: #fec63e;
+  color: $cor-primaria;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ img {
 
 .header {
   width: 100%;
-  background: #fec63e;
+  background: $cor-primaria;
   padding: 15px 0;
   position: fixed;
   top: 0;
@@ -202,7 +202,7 @@ img {
 }
 
 .produtos_lista li {
-  background: #fec63e;
+  background: $cor-primaria;
   text-align: center;
 }
 
@@ -256,11 +256,11 @@ img {
 }
 
 .portfolio .subtitulo {
-  color: #fec63e;
+  color: $cor-primaria;
 }
 
 .portfolio .subtitulo:after {
-  background: #fec63e;
+  background: $cor-primaria;
 }
 
 .portfolio_lista li:last-child {
@@ -348,7 +348,7 @@ img {
 .footer h3 {
   font-size: 18px;
   line-height: 25px;
-  color: #fec63e;
+  color: $cor-primaria;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -359,7 +359,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #fec63e;
+  background: $cor-primaria;
   margin: 10px 0 12px 0;
 }
 
@@ -379,7 +379,7 @@ img {
 }
 
 .footer_redes ul li a {
-  border: 3px solid #fec63e;
+  border: 3px solid $cor-primaria;
   display: block;
   padding: 10px;
   transition: all 0.3s ease;
@@ -391,7 +391,7 @@ img {
 
 .copy {
   width: 100%;
-  background: #fec63e;
+  background: $cor-primaria;
   padding: 20px 0;
 }
 
@@ -433,7 +433,7 @@ img {
 }
 
 .js [data-slide-nav] button.active {
-  background: #fec63e;
+  background: $cor-primaria;
 }
 
 .js [data-anime] {
