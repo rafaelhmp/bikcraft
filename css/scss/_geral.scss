@@ -5,9 +5,7 @@ body {
 }
 
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
-  line-height: 20px;
+  @include tipo-2(14);
 }
 
 img {
@@ -17,8 +15,7 @@ img {
 
 .subtitulo {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  @include tipo-1(24);
   letter-spacing: 0.1em;
   color: $cor-secundaria;
   text-transform: uppercase;
@@ -37,8 +34,7 @@ img {
 
 .subtitulo-interno {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  @include tipo-1(24);
   letter-spacing: 0.1em;
   color: $cor-secundaria;
   text-transform: uppercase;
@@ -58,8 +54,7 @@ img {
   border: 3px solid $cor-primaria;
   padding: 10px 30px;
   color: $cor-primaria;
-  font-size: 14px;
-  line-height: 20px;
+  @include tipo-1(14);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -107,8 +102,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 14px;
-  line-height: 20px;
+  @include tipo-1(14);
   padding: 10px 0;
   transition: all 0.3s ease;
 }
@@ -134,7 +128,7 @@ img {
 }
 
 .introducao h1 {
-  font-size: 48px;
+  @include tipo-1(48);
   color: $white;
   font-weight: bold;
   text-transform: uppercase;
@@ -154,7 +148,7 @@ img {
 .quote-externo cite {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  @include tipo-1(14);
   letter-spacing: 0.1em;
 }
 
@@ -180,7 +174,7 @@ img {
 }
 
 .introducao-interna h1 {
-  font-size: 36px;
+  @include tipo-1(36);
   color: $white;
   font-weight: bold;
   text-transform: uppercase;
@@ -212,8 +206,7 @@ img {
 
 .produtos_lista li h3 {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
+  @include tipo-1(18);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
@@ -305,8 +298,7 @@ img {
 
 .qualidade_lista li h3 {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
+  @include tipo-1(18);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding-top: 20px;
@@ -346,8 +338,7 @@ img {
 }
 
 .footer h3 {
-  font-size: 18px;
-  line-height: 25px;
+  @include tipo-1(18);
   color: $cor-primaria;
   font-weight: bold;
   text-transform: uppercase;
@@ -368,9 +359,7 @@ img {
 }
 
 .footer_contato ul li {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  @include tipo-2(14);
 }
 
 .footer_redes ul li {

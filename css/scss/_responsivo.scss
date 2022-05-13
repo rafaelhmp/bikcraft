@@ -30,8 +30,7 @@
     padding: 41px 0;
   }
   .produto_info p {
-    font-size: 14px;
-    line-height: 20px;
+    @include tipo-1(14);
     padding: 20px 30px;
     height: 122px;
   }
@@ -87,7 +86,7 @@
   }
 
   .introducao h1 {
-    font-size: 36px;
+    @include tipo-1(36);
   }
 
   /* Call */
@@ -101,12 +100,10 @@
   /* Sobre */
   .missao_sobre p {
     padding-right: 0px;
-    font-size: 14px;
-    line-height: 20px;
+    @include tipo-1(14);
   }
   .missao_sobre ul li {
-    font-size: 14px;
-    line-height: 25px;
+    @include tipo-1(14);
   }
   /* Produtos */
   .produto_item h2 {
@@ -117,15 +114,13 @@
     padding: 41px 0;
   }
   .produto_info p {
-    font-size: 14px;
-    line-height: 20px;
+    @include tipo-1(14);
     padding: 20px 30px;
     height: auto;
   }
   .produto_info ul li {
     width: 149px;
-    font-size: 14px;
-    line-height: 20px;
+    @include tipo-1(14);
     padding-top: 14px;
   }
   .form {
