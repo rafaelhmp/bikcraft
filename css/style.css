@@ -366,9 +366,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   font-weight: normal;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
